@@ -1,12 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 struct Node
 {
     int data;
     struct Node *next;
 };
-
 void linkedListTraversal(struct Node *ptr)
 {
     while (ptr != NULL)
@@ -15,7 +13,6 @@ void linkedListTraversal(struct Node *ptr)
         ptr = ptr->next;
     }
 }
-
 // Case 1: Deleting the first element from the linked list
 struct Node *deleteFirst(struct Node *head)
 {
